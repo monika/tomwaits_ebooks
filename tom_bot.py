@@ -61,7 +61,7 @@ tweetbot.twitter_login(cons_key, cons_secret, access_token, access_token_secret)
 targetstring = 'TalkToTom'
 # Keywords are words the bot will look for in tweets it'll reply to, and it
 # will attempt to use them as seeds for the reply
-keywords = ['whiskey', 'moon', 'windshield']
+keywords = [u'dream', u'Jesus', u'moon', u'girl', u'whiskey', u'letter']
 # The prefix will be added to the start of all outgoing tweets.
 prefix = None
 # The suffix will be added to the end of all outgoing tweets.
