@@ -19,7 +19,7 @@ def generate_tweet():
 
     text_model = markovify.NewlineText(text, state_size=3)
 
-    output_text = text_model.make_short_sentence(130) + " #TomWaits"
+    output_text = text_model.make_short_sentence(140)
 
     return output_text
 
