@@ -1,1 +1,1 @@
-worker: tom_bot.py
+worker: python tom_bot.py
