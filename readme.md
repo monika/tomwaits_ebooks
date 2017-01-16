@@ -4,6 +4,7 @@ A [Markov bot](https://github.com/jsvine/markovify) for [@tomwaits_tales](https:
 
 ### Libraries Used
 
+[Python](https://www.python.org/)
 [Markovify](https://github.com/jsvine/markovify)
 [Tweepy](https://github.com/tweepy/tweepy)
 

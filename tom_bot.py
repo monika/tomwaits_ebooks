@@ -17,11 +17,13 @@ def generate_tweet():
     with open(os.path.dirname(__file__) + "lyrics.txt") as f:
         text = f.read()
 
-    text_model = markovify.NewlineText(text)
+    text_model = markovify.NewlineText(text, state_size=3)
 
-    output_text = text_model.make_short_sentence(121) + " #TomTale #TomWaits"
+    output_text = text_model.make_short_sentence(130) + " #TomWaits"
 
     return output_text
 
-# Post the tweet to Twitter
-api.update_status(status=generate_tweet())
+# Post tweet to Twitter every 4 hours
+while True:
+    api.update_status(status=generate_tweet())
+    time.sleep(14400)
